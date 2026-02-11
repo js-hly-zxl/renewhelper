@@ -13,7 +13,7 @@ name = "renewhelper-staging"
 # 注意：在一键部署过程中，Cloudflare 会提示您创建一个新的 KV 并自动填充 ID
 [[kv_namespaces]]
 binding = "RENEW_KV"
-id = ""  # 本地开发占位符。部署前请运行 `npx wrangler kv:namespace create RENEW_KV` 并填入真实 ID
+id = "47511baa6d0a4b4eb04f974e0fe58634"  # 本地开发占位符。部署前请运行 `npx wrangler kv:namespace create RENEW_KV` 并填入真实 ID
 preview_id = "47511baa6d0a4b4eb04f974e0fe58634"
 
 # 设置定时任务 (Cron Triggers)
@@ -26,5 +26,6 @@ crons = ["0,30 * * * *"]
 # 部署时通常会提示用户输入，这里作为默认值
 [vars]
 AUTH_PASSWORD = "admin"
+
 
 
